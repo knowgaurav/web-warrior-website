@@ -5,19 +5,18 @@ import * as styles from "../styles/home.module.css"
 import Img from "gatsby-image"
 
 export default function Home({ data }) {
-  // console.log(data);
-  // const { title, description } = data.site.siteMetadata;
+  // console.log(data)
 
   return (
     <Layout>
       <section className={styles.header}>
         <div>
-          <h2>Homepage</h2>
-          <div>Hello world!</div>
-          <Link className={styles.btn} to="/projects/">My Portfolio Projects</Link>
+          <h2>Design</h2>
+          <h3>Develop & Deploy</h3>
+          <p>UX designer & web developer based in Manchester.</p>
+          <Link className={styles.btn} to="/projects">My Portfolio Projects</Link>
         </div>
-        <Img fluid={data.file.childImageSharp.fluid}></Img>
-        {/* <p>{title} - {description}</p> */}
+        <Img fluid={data.file.childImageSharp.fluid} />
       </section>
     </Layout>
   )
